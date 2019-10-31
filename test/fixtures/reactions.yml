@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reaction_type: 
+  user_id: 
+  post_id: 
+
+two:
+  reaction_type: 
+  user_id: 
+  post_id: 
