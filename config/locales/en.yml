@@ -1,33 +1,201 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  time_ago: "%{time} ago"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: about 1 hour
+        other: about %{count} hours
+      about_x_months:
+        one: about 1 month
+        other: about %{count} months
+      about_x_years:
+        one: about 1 year
+        other: about %{count} years
+      almost_x_years:
+        one: almost 1 year
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_seconds:
+        one: less than 1 second
+        other: less than %{count} seconds
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
+      x_years:
+        one: 1 year
+        other: "%{count} years"
+    prompts:
+      second: Seconds
+      minute: Minute
+      hour: Hour
+      day: Day
+      month: Month
+      year: Year
+  title: "Travel Discovery"
+  page_title:
+    login: "Log in"
+    signup: "Sign up"
+    edit_user: "Edit Information"
+    newfeed: "New Feed"
+    sign-in-fb: "Sign in with Facebook"
+  dashboard: "Dashboard"
+  admin:
+    header:
+      english: "English"
+      vietnamese: "Vietnamese"
+      profile: "Profile"
+      sign-out: "Sign out"
+      online: "Online"
+      place: "Manage Place"
+      city: "Manage List City"
+      hotel: "Manage List Hotel"
+      playground: "Manage List Playground"
+      other: "Other"
+      post: "Manage User's Post"
+      user: "Manage User"
+      search: "Search ..."
+    footer:
+      copyright: "Copyright &copy; 2014-2019"
+  layouts:
+    header:
+      travel: "Let's travel"
+      home: "Home"
+      place: "Place Travel"
+      hotel: "Hotels"
+      restaurent: "Foods"
+      blog: "Blog"
+      login: "Log in"
+      sign-up: "Sign Up"
+      contact: "Contact"
+      find-nearby: "Find Nearby "
+      all: "All Place"
+      hotels: "All Hotels"
+      restaurents: "Foods"
+      travel_header: "Travels"
+      food: "Foods"
+    footer:
+      travel: "Let's Travel"
+      free: " Free Template. All Rights Reserved."
+      design: "Design by Travel team"
+
+  static_pages:
+    home:
+      home: "Home"
+      hotels: "Hotels"
+      restaurents: "Foods"
+      other: "Travels"
+      popular-places: "Popular Places"
+      popular-posts: "Popular Posts"
+  search:
+    index:
+      title: "Search"
+      not_found: "Not Found!"
+
+  travel_places:
+    list_place:
+      title: "List Place"
+      not_found: "Not Found"
+  detail:
+    index:
+      title: "Detail"
+      review_place: "Review Place"
+      place_review: "Place Review"
+      more: "More Listing"
+
+  button:
+    create_account: "Sign Up"
+    login: "Log in"
+    save_change: "Save change"
+    search: "Search"
+    follow: "+ Follow"
+    unfollow: "Unfollow"
+    like: "Like"
+    unlike: "Unlike"
+    comment: "Comment"
+    close: "Close"
+    edit: "Edit"
+    delete: "Delete"
+    post: "Post"
+  label:
+    notifications: "Notifications"
+    see_all: "See all"
+    your_notifications: "Your notifications"
+    signup: "Sign up"
+    email: "Email"
+    password: "Password"
+    login: "Log in"
+    search_place_name: "What are you looking for ?"
+    location: "Location"
+    new_user_ques: "New user ?"
+    remember_me: "Remember me"
+    user : "User"
+    rater:
+      zero: "%{count} Rater"
+      one: "%{count} Rater"
+      other: "%{count} Raters"
+    comment:
+      zero: "%{count} Comment"
+      one: "%{count} Comment"
+      other: "%{count} Comments"
+    like:
+      zero: "%{count} Like"
+      one: "%{count} Like"
+      other: "%{count} Likes"
+    post:
+      zero: "Post"
+      one: "Post"
+      other: "Posts"
+    followers: "Followers"
+    following: "Following"
+    post_content: "What's on your mind?"
+    notification:
+      deleted: "but the notifiable is not found. It may have been deleted."
+      commented: "commented"
+      liked: "liked"
+
+  flash:
+    danger:
+      invalid_user_infor: "You have entered an invalid username or password!"
+      user_not_found: "User not found"
+      require_login_message: "Please log in."
+    success:
+      welcome_message: "Welcome to travel discovery"
+      micropost_deleted: "Deleted post success"
+
+  dialog:
+    delete_comment_confirm: "Are you sure to delete this comment?"
+    delete_post_confirm: "Are you sure to delete this post?"
+  views:
+    pagination:
+      first: "« FIRST"
+      last: "LAST »"
+      previous: "‹ PREV"
+      next: "NEXT ›"
+      truncate: "…"
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "No %{entry_name} found"
+          one: "Displaying <b>1</b> %{entry_name}"
+          other: "Displaying <b>all %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Displaying %{entry_name} <b>%{first} - %{last}</b> of <b>%{total}</b> in total"
+  js_msg:
+    city_not_found: "Cannot found city!"
+    travel_place_not_found: "Cannot found travel place"
