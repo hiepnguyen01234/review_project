@@ -3,3 +3,25 @@ user:
     max_name_length: 30
     max_email_length: 30
     min_pass_length: 6
+  gravatar_size: 80
+  gravatar_big_size: 200
+  gravatar_size_small: 50
+  gravatar_post_size: 42
+  gravatar_size_mini: 25
+  gender:
+    male: "Male"
+    female: "Female"
+remember_box:
+  is_checked: "1"
+num_user_per_page: "6"
+num_feeds_per_page: "6"
+reaction_type:
+  like: 1
+popular_places: 6
+popular_posts: 6
+default_avatar: "user1-128x128.jpg"
+rate_point_round: 2
+truncate_length:
+  place_content: 500
+  post_title: 50
+  post_content: 100

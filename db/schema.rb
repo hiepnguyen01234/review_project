@@ -83,7 +83,7 @@ ActiveRecord::Schema.define(version: 2019_11_02_161205) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "gender"
-    t.string "birthday"
+    t.date "birthday"
     t.float "balance"
     t.boolean "is_adv"
     t.boolean "is_admin"

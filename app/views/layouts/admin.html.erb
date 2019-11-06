@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title yield :title %></title>
+    <%= render "admin/rails_default" %>
+    <%= render "admin/shim" %>
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <%= render "admin/header" %>
+      <%= yield %>
+      <%= render "admin/footer" %>
+    </div>
+  </body>
+</html>
